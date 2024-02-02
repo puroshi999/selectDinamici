@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selezione Comune, Provincia e Regione</title>
+
+</head>
+<body>
+    <h1>Selezione Comune, Provincia e Regione</h1>
+
+    <form>
+        <label for="regione">Regione:</label>
+        <select id="regione" onchange="popolaProvince()">
+            
+            <option value="lombardia">Lombardia</option>
+            <option value="lazio">Lazio</option>
+            <option value="emilia-romagna">Emilia-Romagna</option>
+            
+        </select>
+
+        <label for="provincia">Provincia:</label>
+        <select id="provincia" onchange="popolaComuni()">
+           
+        </select>
+
+        <label for="comune">Comune:</label>
+        <select id="comune">
+           
+        </select>
+    </form>
+    <script src="js.js"></script>
+</body>
+</html>
